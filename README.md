@@ -20,7 +20,7 @@ Vue.use(OneIcon, {href: 'https://at.alicdn.com/t/font*****.js'})
 ### 在vue中原生使用iconfont
  -  引入js
 
-    <img src="https://public.veypi.com/img/screenshot/20211020152019.png" alt="image-20211020152019051" style="zoom:40%;" />
+    ![js地址](https://public.veypi.com/img/screenshot/20211020152019.png)
 
     ```html
     <script type="text/javascript" src=""></script>
