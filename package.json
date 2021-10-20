@@ -1,5 +1,5 @@
 {
-  "name": "oneicon",
+  "name": "@veypi/one-icon",
   "version": "1.0.0",
   "description": "easy to use iconfont in vue",
   "main": "src/index.ts",
