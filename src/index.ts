@@ -16,7 +16,6 @@ export default {
     }
     this.installed = true
     if (options && options.href) {
-      console.log(options.href)
       loadJS(options.href)
     } else {
       console.error('not set iconfont href')
