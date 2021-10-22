@@ -3,19 +3,14 @@
     <use :xlink:href="'#icon-'+icon"></use>
   </svg>
 </template>
-<script lang='ts'>
-import {Component, Vue} from 'vue-property-decorator'
-
-@Component({
-  components: {}
+<script lang='ts' setup>
+import {computed, useSlots} from 'vue'
+const slots = useSlots()
+const icon = computed(() => {
+  if (slots.default) return slots.default()[0].children?.trim()
+  console.warn('blank icon name')
+  return ''
 })
-export default class OneIcon extends Vue {
-  get icon() {
-    if (this.$slots.default) return this.$slots.default[0].text?.trim()
-    console.warn('blank icon name')
-    return ''
-  }
-}
 </script>
 <style scoped>
 .icon {

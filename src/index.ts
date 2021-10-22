@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import { App } from 'vue'
 import OneIcon from './main.vue'
 
 function loadJS(url: string) {
@@ -10,7 +10,7 @@ function loadJS(url: string) {
 
 export default {
   installed: false,
-  install(vue: typeof Vue, options?: { href: '' }): void {
+  install(vue: App, options?: { href: '' }): void {
     if (this.installed) {
       return
     }
