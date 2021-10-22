@@ -5,7 +5,10 @@ iconfont 是一个非常方便管理和查找icon的平台, 但引用svg时稍�
 
 ### 使用组件 one-icon
 ```bash
-yarn add @veypi/one-icon
+# vue2
+yarn add @veypi/one-icon@1
+# vue3
+yarn add @veypi/one-icon@2
 ```
 
 ```typescript
