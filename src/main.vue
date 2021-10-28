@@ -7,6 +7,7 @@
 import {computed, useSlots} from 'vue'
 const slots = useSlots()
 const icon = computed(() => {
+  // @ts-ignore
   if (slots.default) return slots.default()[0].children?.trim()
   console.warn('blank icon name')
   return ''

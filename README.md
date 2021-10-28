@@ -12,11 +12,17 @@ yarn add @veypi/one-icon@2
 ```
 
 ```typescript
+// main.ts 配置
 import OneIcon from '@veypi/one-icon'
 // 注意下载下来的js文件放public文件夹里
 Vue.use(OneIcon, {href: './icon.js'})
 // 或者使用阿里cdn 好处是每次添加icon后不用更新 但是无法离线或内网使用
 Vue.use(OneIcon, {href: 'https://at.alicdn.com/t/font*****.js'})
+```
+
+使用中无需带icon-的抬头
+```html
+<one-icon>IconName</one-icon>
 ```
 
 
