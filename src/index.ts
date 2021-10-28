@@ -17,8 +17,6 @@ export default {
     this.installed = true
     if (options && options.href) {
       loadJS(options.href)
-    } else {
-      console.error('not set iconfont href')
     }
     vue.component('one-icon', OneIcon)
   }
