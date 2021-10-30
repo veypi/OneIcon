@@ -8,6 +8,8 @@ function loadJS(url: string) {
   document.getElementsByTagName('head')[0].appendChild(script)
 }
 
+export OneIcon
+
 export default {
   installed: false,
   install(vue: App, options?: { href: '' }): void {
